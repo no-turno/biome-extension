@@ -2,7 +2,6 @@
   "name": "template",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "npx prettier --write src/*",
@@ -12,10 +11,23 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@chakra-ui/pro-theme": "^0.10.0",
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
     "@replit/extensions": "^1.8.0",
     "@replit/extensions-react": "^0.4.1",
     "@replit/replkit": "^0.0.5",
+    "framer-motion": "^11.2.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
   }
 }

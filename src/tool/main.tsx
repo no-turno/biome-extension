@@ -1,8 +1,8 @@
-import * as React from "react";
-import { renderExtension } from "@replit/extensions-react";
+import { createRoot } from "react-dom/client";
+import { ChakraProvider } from "@chakra-ui/react";
 
-function Component() {
-  return <div>Example tool</div>;
+function App() {
+  return <ChakraProvider>app</ChakraProvider>;
 }
 
-renderExtension(document.getElementById("root") as Element, <Component />);
+createRoot(document.getElementById("root") as Element).render(<App />);

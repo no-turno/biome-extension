@@ -1,0 +1,15 @@
+jsx = "react"
+jsxImportSource = "react"
+
+[debug]
+editor = "code"
+
+[loader]
+".tsx" = "tsx"
+".ts" = "ts"
+".css" = "css"
+".replit" = "toml"
+
+[run]
+bun = true
+shell = "system"
